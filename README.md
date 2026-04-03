@@ -11,7 +11,7 @@
 | Project | TiaConnectVCS |
 | Language | en-US |
 | Exported with | T-IA Connect 2.0.669 |
-| Last export | 2026-04-03 15:34 |
+| Last export | 2026-04-03 15:39 |
 
 ## Hardware
 
@@ -25,12 +25,15 @@
 
 | Type | Count | Names |
 |------|-------|-------|
-| FB | 1 | FB_MotorControl |
-| FC | 1 | FC_Utilities |
-| InstanceDB | 1 | DB_Motor1 |
+| FB | 2 | FB_MotorControl, FB_ValveControl |
+| FC | 2 | FC_Utilities, FC_Diagnostic |
+| GlobalDB | 1 | DB_Config |
+| InstanceDB | 2 | DB_Motor1, DB_Valve1 |
 | OB | 1 | Main |
 
-**Tag Tables:** 1 table(s), 0 tag(s)
+**Tag Tables:** 2 table(s), 4 tag(s)
+
+**UDTs:** UDT_MotorData
 
 ## Repository Structure
 

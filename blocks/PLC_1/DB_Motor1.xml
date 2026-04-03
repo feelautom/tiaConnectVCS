@@ -12,6 +12,7 @@
           <Section Name="Input">
             <Member Datatype="Bool" Name="bStart" />
             <Member Datatype="Bool" Name="bStop" />
+            <Member Datatype="Bool" Name="bAutoStop" />
           </Section>
           <Section Name="Output">
             <Member Datatype="Bool" Name="bRunning" />

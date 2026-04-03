@@ -4,11 +4,13 @@
   <DocumentInfo />
   <SW.Blocks.FB ID="0">
     <AttributeList>
+      <HeaderVersion>0.2</HeaderVersion>
       <Interface>
         <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
           <Section Name="Input">
             <Member Datatype="Bool" Name="bStart" />
             <Member Datatype="Bool" Name="bStop" />
+            <Member Datatype="Bool" Name="bAutoStop" />
           </Section>
           <Section Name="Output">
             <Member Datatype="Bool" Name="bRunning" />
@@ -64,56 +66,74 @@
                 </Symbol>
               </Access>
               <Blank UId="35" />
-              <Token Text="THEN" UId="36" />
-              <NewLine UId="37" />
-              <Blank Num="4" UId="38" />
-              <Access Scope="LocalVariable" UId="39">
-                <Symbol UId="40">
-                  <Component Name="bRunning" UId="41" />
+              <Token Text="AND" UId="36" />
+              <Blank UId="37" />
+              <Token Text="NOT" UId="38" />
+              <Blank UId="39" />
+              <Access Scope="LocalVariable" UId="40">
+                <Symbol UId="41">
+                  <Component Name="bAutoStop" UId="42" />
                 </Symbol>
               </Access>
-              <Blank UId="42" />
-              <Token Text=":=" UId="43" />
-              <Blank UId="44" />
-              <Access Scope="LiteralConstant" UId="45">
-                <Constant UId="46">
-                  <ConstantValue UId="48">TRUE</ConstantValue>
+              <Blank UId="43" />
+              <Token Text="THEN" UId="44" />
+              <NewLine UId="45" />
+              <Blank Num="4" UId="46" />
+              <Access Scope="LocalVariable" UId="47">
+                <Symbol UId="48">
+                  <Component Name="bRunning" UId="49" />
+                </Symbol>
+              </Access>
+              <Blank UId="50" />
+              <Token Text=":=" UId="51" />
+              <Blank UId="52" />
+              <Access Scope="LiteralConstant" UId="53">
+                <Constant UId="54">
+                  <ConstantValue UId="56">TRUE</ConstantValue>
                 </Constant>
               </Access>
-              <Token Text=";" UId="49" />
-              <NewLine UId="50" />
-              <Token Text="END_IF" UId="51" />
-              <Token Text=";" UId="52" />
-              <NewLine Num="2" UId="53" />
-              <Token Text="IF" UId="54" />
-              <Blank UId="55" />
-              <Access Scope="LocalVariable" UId="56">
-                <Symbol UId="57">
-                  <Component Name="bStop" UId="58" />
+              <Token Text=";" UId="57" />
+              <NewLine UId="58" />
+              <Token Text="END_IF" UId="59" />
+              <Token Text=";" UId="60" />
+              <NewLine Num="2" UId="61" />
+              <Token Text="IF" UId="62" />
+              <Blank UId="63" />
+              <Access Scope="LocalVariable" UId="64">
+                <Symbol UId="65">
+                  <Component Name="bStop" UId="66" />
                 </Symbol>
               </Access>
-              <Blank UId="59" />
-              <Token Text="THEN" UId="60" />
-              <NewLine UId="61" />
-              <Blank Num="4" UId="62" />
-              <Access Scope="LocalVariable" UId="63">
-                <Symbol UId="64">
-                  <Component Name="bRunning" UId="65" />
+              <Blank UId="67" />
+              <Token Text="OR" UId="68" />
+              <Blank UId="69" />
+              <Access Scope="LocalVariable" UId="70">
+                <Symbol UId="71">
+                  <Component Name="bAutoStop" UId="72" />
                 </Symbol>
               </Access>
-              <Blank UId="66" />
-              <Token Text=":=" UId="67" />
-              <Blank UId="68" />
-              <Access Scope="LiteralConstant" UId="69">
-                <Constant UId="70">
-                  <ConstantValue UId="72">FALSE</ConstantValue>
+              <Blank UId="73" />
+              <Token Text="THEN" UId="74" />
+              <NewLine UId="75" />
+              <Blank Num="4" UId="76" />
+              <Access Scope="LocalVariable" UId="77">
+                <Symbol UId="78">
+                  <Component Name="bRunning" UId="79" />
+                </Symbol>
+              </Access>
+              <Blank UId="80" />
+              <Token Text=":=" UId="81" />
+              <Blank UId="82" />
+              <Access Scope="LiteralConstant" UId="83">
+                <Constant UId="84">
+                  <ConstantValue UId="86">FALSE</ConstantValue>
                 </Constant>
               </Access>
-              <Token Text=";" UId="73" />
-              <NewLine UId="74" />
-              <Token Text="END_IF" UId="75" />
-              <Token Text=";" UId="76" />
-              <NewLine UId="77" />
+              <Token Text=";" UId="87" />
+              <NewLine UId="88" />
+              <Token Text="END_IF" UId="89" />
+              <Token Text=";" UId="90" />
+              <NewLine UId="91" />
             </StructuredText>
           </NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>

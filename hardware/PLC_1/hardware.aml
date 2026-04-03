@@ -58,6 +58,53 @@
             <InternalElement ID="d3c43202-e40f-88b0-5dab-ed175adb9bfa" Name="Default tag table">
               <SupportedRoleClass RefRoleClassPath="AutomationProjectConfigurationRoleClassLib/TagTable" />
             </InternalElement>
+            <InternalElement ID="97f1deb0-2240-7c96-2383-fc18f5f813a4" Name="TIAC_Inputs_Moteur">
+              <ExternalInterface ID="ee23680a-0be1-6dc6-93c9-9e04a5aa8dda" Name="bStart" RefBaseClassPath="AutomationProjectConfigurationInterfaceClassLib/Tag">
+                <Attribute AttributeDataType="xs:string" Name="DataType">
+                  <Value>Bool</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="IoType">
+                  <Value>Input</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="LogicalAddress">
+                  <Value>0.0</Value>
+                </Attribute>
+              </ExternalInterface>
+              <ExternalInterface ID="f499243e-1a6a-2710-54a4-110970445849" Name="bStop" RefBaseClassPath="AutomationProjectConfigurationInterfaceClassLib/Tag">
+                <Attribute AttributeDataType="xs:string" Name="DataType">
+                  <Value>Bool</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="IoType">
+                  <Value>Input</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="LogicalAddress">
+                  <Value>0.1</Value>
+                </Attribute>
+              </ExternalInterface>
+              <ExternalInterface ID="597ecfb5-4e58-7708-9efd-201657810047" Name="bFault" RefBaseClassPath="AutomationProjectConfigurationInterfaceClassLib/Tag">
+                <Attribute AttributeDataType="xs:string" Name="DataType">
+                  <Value>Bool</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="IoType">
+                  <Value>Input</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="LogicalAddress">
+                  <Value>0.2</Value>
+                </Attribute>
+              </ExternalInterface>
+              <ExternalInterface ID="7e1d3438-d9b4-aadb-0c62-32e24dc8af19" Name="bRunFeedback" RefBaseClassPath="AutomationProjectConfigurationInterfaceClassLib/Tag">
+                <Attribute AttributeDataType="xs:string" Name="DataType">
+                  <Value>Bool</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="IoType">
+                  <Value>Input</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="LogicalAddress">
+                  <Value>0.3</Value>
+                </Attribute>
+              </ExternalInterface>
+              <SupportedRoleClass RefRoleClassPath="AutomationProjectConfigurationRoleClassLib/TagTable" />
+            </InternalElement>
             <InternalElement ID="ca6308ae-3db0-aaa8-f144-2c076008e1bd" Name="DI 14/DQ 10_1">
               <Attribute AttributeDataType="xs:int" Name="PositionNumber">
                 <Value>1</Value>
@@ -768,6 +815,10 @@
               <SupportedRoleClass RefRoleClassPath="AutomationProjectConfigurationRoleClassLib/CommunicationInterface" />
             </InternalElement>
             <SupportedRoleClass RefRoleClassPath="AutomationProjectConfigurationRoleClassLib/DeviceItem" />
+            <InternalLink Name="Link To Tag_1" RefPartnerSideA="3b6c10a0-81a6-4efd-9128-045b5b1d8a69:Channel_DI_0" RefPartnerSideB="0bf72677-8912-4a0b-aca4-f4f1b6795374:bStart" />
+            <InternalLink Name="Link To Tag_2" RefPartnerSideA="3b6c10a0-81a6-4efd-9128-045b5b1d8a69:Channel_DI_1" RefPartnerSideB="0bf72677-8912-4a0b-aca4-f4f1b6795374:bStop" />
+            <InternalLink Name="Link To Tag_3" RefPartnerSideA="3b6c10a0-81a6-4efd-9128-045b5b1d8a69:Channel_DI_2" RefPartnerSideB="0bf72677-8912-4a0b-aca4-f4f1b6795374:bFault" />
+            <InternalLink Name="Link To Tag_4" RefPartnerSideA="3b6c10a0-81a6-4efd-9128-045b5b1d8a69:Channel_DI_3" RefPartnerSideB="0bf72677-8912-4a0b-aca4-f4f1b6795374:bRunFeedback" />
           </InternalElement>
           <SupportedRoleClass RefRoleClassPath="AutomationProjectConfigurationRoleClassLib/DeviceItem" />
         </InternalElement>
