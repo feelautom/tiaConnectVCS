@@ -1,0 +1,4 @@
+*.xml text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.aml text eol=lf
