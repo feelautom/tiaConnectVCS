@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="None">
+            <Member Datatype="Bool" Name="Command">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Datatype="Bool" Name="Feedback">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Datatype="Real" Name="Speed">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Datatype="DInt" Name="RunTime">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Datatype="Int" Name="FaultCode">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <IsFailsafeCompliant>false</IsFailsafeCompliant>
+      <Name>UDT_MotorData</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText CompositionName="Comment" ID="1">
+        <ObjectList>
+          <MultilingualTextItem CompositionName="Items" ID="2">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText CompositionName="Title" ID="3">
+        <ObjectList>
+          <MultilingualTextItem CompositionName="Items" ID="4">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>UDT_MotorData</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>
