@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo />
+  <SW.Tags.PlcTagTable ID="0">
+    <AttributeList>
+      <Name>TIAC_Inputs_Moteur</Name>
+    </AttributeList>
+    <ObjectList>
+      <SW.Tags.PlcTag CompositionName="Tags" ID="1">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%I0.0</LogicalAddress>
+          <Name>bStart</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText CompositionName="Comment" ID="2">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="3">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag CompositionName="Tags" ID="4">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%I0.1</LogicalAddress>
+          <Name>bStop</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText CompositionName="Comment" ID="5">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="6">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag CompositionName="Tags" ID="7">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%I0.2</LogicalAddress>
+          <Name>bFault</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText CompositionName="Comment" ID="8">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="9">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag CompositionName="Tags" ID="A">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%I0.3</LogicalAddress>
+          <Name>bRunFeedback</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText CompositionName="Comment" ID="B">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="C">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+    </ObjectList>
+  </SW.Tags.PlcTagTable>
+</Document>
