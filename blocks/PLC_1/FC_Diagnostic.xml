@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Datatype="Bool" Name="bFault1" />
+            <Member Datatype="Bool" Name="bFault2" />
+          </Section>
+          <Section Name="Output">
+            <Member Datatype="Word" Name="wAlarmWord" />
+          </Section>
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Datatype="Void" Name="Ret_Val" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_Diagnostic</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText CompositionName="Comment" ID="1">
+        <ObjectList>
+          <MultilingualTextItem CompositionName="Items" ID="2">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit CompositionName="CompileUnits" ID="3">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <NewLine UId="21" />
+              <Access Scope="LocalVariable" UId="22">
+                <Symbol UId="23">
+                  <Component Name="wAlarmWord" UId="24" />
+                  <Token Text="." UId="25" />
+                  <Token Text="%X0" UId="26" />
+                </Symbol>
+              </Access>
+              <Blank UId="27" />
+              <Token Text=":=" UId="28" />
+              <Blank UId="29" />
+              <Access Scope="LocalVariable" UId="30">
+                <Symbol UId="31">
+                  <Component Name="bFault1" UId="32" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="33" />
+              <NewLine UId="34" />
+              <Access Scope="LocalVariable" UId="35">
+                <Symbol UId="36">
+                  <Component Name="wAlarmWord" UId="37" />
+                  <Token Text="." UId="38" />
+                  <Token Text="%X1" UId="39" />
+                </Symbol>
+              </Access>
+              <Blank UId="40" />
+              <Token Text=":=" UId="41" />
+              <Blank UId="42" />
+              <Access Scope="LocalVariable" UId="43">
+                <Symbol UId="44">
+                  <Component Name="bFault2" UId="45" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="46" />
+              <NewLine UId="47" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText CompositionName="Comment" ID="4">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="5">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText CompositionName="Title" ID="6">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="7">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText CompositionName="Title" ID="8">
+        <ObjectList>
+          <MultilingualTextItem CompositionName="Items" ID="9">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>
