@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Datatype="Bool" Name="bStart" />
+            <Member Datatype="Bool" Name="bStop" />
+          </Section>
+          <Section Name="Output">
+            <Member Datatype="Bool" Name="bRunning" />
+            <Member Datatype="Bool" Name="bFault" />
+          </Section>
+          <Section Name="InOut" />
+          <Section Name="Static">
+            <Member Datatype="Time" Name="tRunTime" />
+          </Section>
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_MotorControl</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText CompositionName="Comment" ID="1">
+        <ObjectList>
+          <MultilingualTextItem CompositionName="Items" ID="2">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit CompositionName="CompileUnits" ID="3">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <NewLine UId="21" />
+              <Token Text="IF" UId="22" />
+              <Blank UId="23" />
+              <Access Scope="LocalVariable" UId="24">
+                <Symbol UId="25">
+                  <Component Name="bStart" UId="26" />
+                </Symbol>
+              </Access>
+              <Blank UId="27" />
+              <Token Text="AND" UId="28" />
+              <Blank UId="29" />
+              <Token Text="NOT" UId="30" />
+              <Blank UId="31" />
+              <Access Scope="LocalVariable" UId="32">
+                <Symbol UId="33">
+                  <Component Name="bStop" UId="34" />
+                </Symbol>
+              </Access>
+              <Blank UId="35" />
+              <Token Text="THEN" UId="36" />
+              <NewLine UId="37" />
+              <Blank Num="4" UId="38" />
+              <Access Scope="LocalVariable" UId="39">
+                <Symbol UId="40">
+                  <Component Name="bRunning" UId="41" />
+                </Symbol>
+              </Access>
+              <Blank UId="42" />
+              <Token Text=":=" UId="43" />
+              <Blank UId="44" />
+              <Access Scope="LiteralConstant" UId="45">
+                <Constant UId="46">
+                  <ConstantValue UId="48">TRUE</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=";" UId="49" />
+              <NewLine UId="50" />
+              <Token Text="END_IF" UId="51" />
+              <Token Text=";" UId="52" />
+              <NewLine Num="2" UId="53" />
+              <Token Text="IF" UId="54" />
+              <Blank UId="55" />
+              <Access Scope="LocalVariable" UId="56">
+                <Symbol UId="57">
+                  <Component Name="bStop" UId="58" />
+                </Symbol>
+              </Access>
+              <Blank UId="59" />
+              <Token Text="THEN" UId="60" />
+              <NewLine UId="61" />
+              <Blank Num="4" UId="62" />
+              <Access Scope="LocalVariable" UId="63">
+                <Symbol UId="64">
+                  <Component Name="bRunning" UId="65" />
+                </Symbol>
+              </Access>
+              <Blank UId="66" />
+              <Token Text=":=" UId="67" />
+              <Blank UId="68" />
+              <Access Scope="LiteralConstant" UId="69">
+                <Constant UId="70">
+                  <ConstantValue UId="72">FALSE</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=";" UId="73" />
+              <NewLine UId="74" />
+              <Token Text="END_IF" UId="75" />
+              <Token Text=";" UId="76" />
+              <NewLine UId="77" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText CompositionName="Comment" ID="4">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="5">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText CompositionName="Title" ID="6">
+            <ObjectList>
+              <MultilingualTextItem CompositionName="Items" ID="7">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText CompositionName="Title" ID="8">
+        <ObjectList>
+          <MultilingualTextItem CompositionName="Items" ID="9">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
